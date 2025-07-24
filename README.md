@@ -16,7 +16,7 @@ A Fun And Interactive React Application That Displays Real-time Weather For A Se
 
 ## Demo
 
-![App Screenshot](src\assets\App-Screenshot.png)
+![App Screenshot](src/assets/App-Screenshot.png)
 _Real-Time Pokémon Companion Based On Your Local Weather!_
 
 ## Tech Stack
@@ -50,9 +50,9 @@ The App Should Now Be Running At `http://localhost:3000`.
 
 ## API's Used
 
-- [open-meteo Geocoding Api](Https://open-meteo.com/en/docs/geocoding-api)
-- [open-meteo Weather Api](Https://open-meteo.com/en/docs)
-- [pokéapi Sprites](Https://github.com/pokeapi/sprites)
+- [Open-Meteo Geocoding API](https://open-meteo.com/en/docs/geocoding-api)
+- [Open-Meteo Weather API](https://open-meteo.com/en/docs)
+- [PokéAPI Sprites](https://github.com/PokeAPI/sprites)
 
 ## Project Structure
 
