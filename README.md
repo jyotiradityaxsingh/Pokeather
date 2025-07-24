@@ -1,6 +1,6 @@
 ## Weather Pokémon App
 
-A Fun And Interactive React Application That Displays Real-time Weather For A Searched City, And Shows A Pokémon That Matches The Current Weather Conditions!
+A Fun And Interactive React Application That Displays Real-Time Weather For A Searched City, And Shows A Pokémon That Matches The Current Weather Conditions!
 
 ## Features
 
