@@ -36,11 +36,11 @@ function MainComponent({ city, weather, gradient }) {
 
   return (
     <div
-      className={`w-full max-w-4xl rounded-xl h-80 bg-gradient-to-b ${gradient} shadow-2xl mx-auto p-5 transition-all duration-500`}
+      className={`w-full max-w-4xl rounded-xl h-auto bg-gradient-to-b ${gradient} shadow-2xl mx-auto p-5 transition-all duration-500`}
     >
       {/* Top */}
-      <div className="flex justify-between text-xl text-gray-500 font-medium mx-2">
-        <p>{city || "City"}</p>
+      <div className="flex justify-between text-sm sm:text-xl text-gray-500 font-medium mx-2">
+        <p className="truncate">{city || "City"}</p>
         <div className="flex space-x-5">
           <p>{new Date().toLocaleDateString()}</p>
           <p>
@@ -56,10 +56,10 @@ function MainComponent({ city, weather, gradient }) {
 
       {/* Middle */}
       <div className="flex flex-col justify-center items-center mt-4">
-        <h1 className="text-5xl font-bold tracking-normal text-neutral-700">
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-normal text-neutral-700">
           {weather ? `${weather.temp}°C` : "--"}
         </h1>
-        <p className="text-md text-gray-600 mt-1">Current Weather</p>
+        <p className="text-sm sm:text-md text-gray-600 mt-1">Current Weather</p>
       </div>
 
       {/* Bottom */}
@@ -80,14 +80,19 @@ function MainComponent({ city, weather, gradient }) {
               d="M5 8h8.5a2.5 2.5 0 1 0-2.34-3.24M3 12h15.5a2.5 2.5 0 1 1-2.34 3.24M4 16h5.5a2.5 2.5 0 1 1-2.34 3.24"
             />
           </svg>
-          <p className="text-neutral-700 text-sm">
+          <p className="text-neutral-700 text-xs sm:text-sm">
             {weather ? `${weather.windSpeed} km/h` : "--"}
           </p>
         </div>
       </div>
+
       {/* Pokémon Display */}
       <div className="flex flex-col items-center mt-4">
-        <img src={pokemon.image} alt={pokemon.name} className="w-30 h-30" />
+        <img
+          src={pokemon.image}
+          alt={pokemon.name}
+          className="w-20 h-20 sm:w-30 sm:h-30"
+        />
       </div>
     </div>
   );

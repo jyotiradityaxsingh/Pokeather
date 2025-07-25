@@ -59,10 +59,10 @@ function App() {
 
   return (
     <div
-      className={`h-screen flex flex-col justify-center items-center bg-gradient-to-b ${gradient} space-y-6 px-4 transition-all duration-500`}
+      className={`h-screen flex flex-col justify-center items-center bg-gradient-to-b ${gradient} space-y-6 px-4 sm:px-6 lg:px-8 transition-all duration-500`}
     >
       <SearchBar onSearch={handleSearch} />
-      {error && <p className="text-red-500">{error}</p>}
+      {error && <p className="text-red-500 text-sm sm:text-base">{error}</p>}
       <MainComponent city={city} weather={weather} gradient={gradient} />
     </div>
   );
